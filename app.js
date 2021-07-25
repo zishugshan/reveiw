@@ -63,3 +63,11 @@ function showPerson(item) {
   info.textContent = person.text;
 }
 
+nextBtn.addEventListener("click",function(){
+  currentItem++;
+  if(currentItem > reviews.length-1){
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+
+});
